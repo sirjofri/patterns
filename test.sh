@@ -13,3 +13,10 @@ if [ "$?" = "0" ]; then
 else
 	echo "Strategy does not work";
 fi
+
+./observer/observer 2>/dev/null &>/dev/null
+if [ "$?" = "0" ]; then
+	echo "Observer works";
+else
+	echo "Observer does not work";
+fi
